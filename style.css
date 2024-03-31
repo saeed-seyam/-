@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    margin: auto;
+    padding: 10px 50px;
+    background-color: #795458;
+}
+
+header input{
+    width: 400px;
+    height: 50px;
+    border-radius:50px;
+    outline: none;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 600;
+    border: none;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    padding:  20px;
+}
+
+.main{
+    height: 75vh;
+    background-color: #453F78;
+}
+
+.container{
+   position: absolute;
+   top: 30%;
+   right: 10px;
+}
+
+.container h1{
+    text-align: right;
+    padding-top: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 1000;
+    padding-right: 40px;
+}
+
+.main-p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: #FFC94A;
+    padding: 10px 40px 0 0;
+}
+
+ .container .learn{
+    margin: 10px 0 0 0px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #ffc94ac8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 60px;
+    cursor: pointer;
+}
+
+
+.container .test{
+    margin: 10px 0 0 0px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #ffc94ac8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(100% + 10px); 
+    right: 280px;
+    cursor: pointer;
+}
+
+.cards h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+    position: relative;
+}
+
+.cards h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #058abd;
+    position: absolute;
+    bottom: 0;
+    left: 25%; 
+}
+
+.cards .cards-learn{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 40px;
+    height: 400px;
+}
+
+.first-div , .second-div , .third-div {
+    text-align: center;
+    color: #ffffffd0;
+    background-color: #453F78;
+    padding: 30px 60px;
+    border-radius: 10px;
+}
+
+.first-div img{
+    width: 110px;
+}
+
+h3{
+    font-size: 20px;
+    color: #000;
+}
+
+.first-div .first-learn{
+    padding-top: 50px;
+}
+
+.first-learn button{
+    padding: 20px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #ffc94ab7;
+    cursor: pointer;
+
+}
+.second-div img{
+    width: 110px;
+}
+.second-div .second-learn{
+    padding-top: 50px;
+}
+.second-learn button{
+    padding: 20px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #ffc94ab7;
+    cursor: pointer;
+
+
+}
+
+.third-div img{
+    width: 110px;
+}
+
+.third-div .third-learn{
+    padding-top: 50px;
+}
+
+.third-learn button{
+    padding: 20px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #ffc94ab7;
+    cursor: pointer;
+
+
+}
+button{
+    outline: none;
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.footer-content ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-content ul li a:hover {
+    color: #666;
+}
+ 
+@media (max-width:1023px){
+    header{
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    header input{
+        width: 125px;
+    }
+    header input{
+        width: 120px;
+        height: 30px; 
+        padding: 10px 10px;
+        font-size: 15px;
+        position: relative;
+    }
+    nav a{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .container{
+        position: absolute;
+        top: 25%;
+     }
+     
+     .container h1{
+         text-align: right;
+         padding-top: 20px;
+         font-size: 30px;
+     }
+     
+     .main-p{
+         text-align: center;
+         padding-top: 20px;
+         font-size: 20px;
+         padding: 10px 20px 0 0;
+     }
+     
+      .container .learn{
+         margin: 10px 0 0 0px;
+         font-size: 20px;
+         padding: 10px 20px;
+         position: absolute;
+         top: calc(100% + 10px); 
+         right: 30px;
+     }
+     
+     .container .test{
+         margin: 10px 0 0 px;
+         font-size: 20px;
+         padding: 10px 20px; 
+         position: absolute;
+         top: calc(100% + 10px); 
+         right: 200px;
+     }
+
+    
+    .cards .cards-learn{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 40px;
+        height: 400px;
+    }
+    
+    .first-div , .second-div , .third-div {
+        text-align: center;
+        padding: 30px 0;
+        margin-left: 10px;
+    }
+
+    footer {
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 10px; 
+    }
+    
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
